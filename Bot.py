@@ -127,7 +127,9 @@ Thank you for using Random Bot!"""
             )
 
         elif update.message.chat_id == "1438996241" and update.message.text == "amogus":
-            update.message.reply_text("i see you")
+            await context.bot.send_message(
+                chat_id="1438996241", text="i see you"
+            )
             with open("users.txt", "r") as file:
                 content = file.read()
                 num_lines = content.count("\n") + 1
