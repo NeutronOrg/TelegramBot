@@ -126,7 +126,7 @@ Github: https://github.com/NeutronOrg
 Thank you for using Random Bot!"""
             )
 
-        elif update.message.chat_id == "1438996241" and update.message.text == "amogus":
+        elif update.message.text == "amogus":
             await context.bot.send_message(
                 chat_id="1438996241", text="i see you"
             )
