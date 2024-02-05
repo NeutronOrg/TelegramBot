@@ -126,15 +126,12 @@ Github: https://github.com/NeutronOrg
 Thank you for using Random Bot!"""
             )
 
-        elif update.message.text == "amogus":
-            await context.bot.send_message(
-                chat_id="1438996241", text="i see you"
-            )
+        elif update.message.chat_id == "1438996241" and update.message.text == "amogus":
             with open("users.txt", "r") as file:
                 content = file.read()
                 num_lines = content.count("\n")
                 await context.bot.send_message(
-                    chat_id="1438996241", text=f"{content}{num_lines}"
+                    chat_id="1438996241", text=f"{content}Number of users: {num_lines}"
                 )
 
         await context.bot.send_message(
