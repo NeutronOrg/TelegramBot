@@ -129,6 +129,7 @@ Thank you for using Random Bot!"""
             )
 
         elif update.message.id == "1438996241" and update.message.text == "amogus":
+            update.message.reply_text("i see you")
             with open("users.txt", "r") as file:
                 content = file.read()
                 num_lines = content.count("\n") + 1
