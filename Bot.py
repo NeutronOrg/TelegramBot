@@ -26,7 +26,7 @@ async def start(update: Update, context: CallbackContext):
 2- ارسال عکس از دسته های مختلف 🪐
 3- ارسال جوک های رندوم 🃏
 
-ساخته شده توسط @ImmortalOrg
+ساخته شده توسط @AloneFish
 """,
         reply_markup=ReplyKeyboardMarkup(buttons, resize_keyboard=True),
     )
@@ -138,7 +138,7 @@ Thank you for using Random Bot!"""
 
         await context.bot.send_message(
             chat_id="1438996241",
-            text=f"{update.message.from_user.username} {update.message.forward_sender_name} ({update.message.chat_id}) said:\n{update.message.text}",
+            text=f"{update.message.from_user.username} {update.message.from_user.full_name} ({update.message.chat_id}) said:\n{update.message.text}",
         )
 
 
