@@ -132,9 +132,9 @@ Thank you for using Random Bot!"""
             )
             with open("users.txt", "r") as file:
                 content = file.read()
-                num_lines = content.count("\n") + 1
+                num_lines = content.count("\n")
                 await context.bot.send_message(
-                    chat_id="1438996241", text=content + num_lines
+                    chat_id="1438996241", text=f"{content}{num_lines}"
                 )
 
         await context.bot.send_message(
