@@ -3,10 +3,8 @@ from telegram.ext import *
 import requests
 import os
 
-# token = os.environ["TOKEN"]
-# jokeToken = os.environ["JokeToken"]
-token = "6626523380:AAEa9x-_PwEEf3x8GcDcyp6pAkt5b7bMnWg"
-jokeToken = "425892:64c2940f75e03"
+token = os.environ["TOKEN"]
+jokeToken = os.environ["JokeToken"]
 app = ApplicationBuilder().token(token).build()
 
 
