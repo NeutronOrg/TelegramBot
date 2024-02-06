@@ -2,6 +2,7 @@ from telegram import *
 from telegram.ext import *
 import requests
 import os
+from keep_alive import keep_alive
 
 token = os.environ["TOKEN"]
 jokeToken = os.environ["JokeToken"]
@@ -147,4 +148,5 @@ app.add_handler(CommandHandler("joke", joke))
 app.add_handler(CommandHandler("enjoke", enjoke))
 app.add_handler(MessageHandler(filters.TEXT, handle_message))
 
+keep_alive()
 app.run_polling()
